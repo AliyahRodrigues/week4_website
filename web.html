@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@300&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+    <!-- ***********************  NavBar  *********************** -->
+    <div class="navbar">
+        <h4 class="logo">ALIYAH | RODRIGUES</h4>
+        <h4 class="logo-none">A.R</h4>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PROJECTS</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="registration_form/index.html"><button>CONTACT</button></a>
+    </div>
+
+    <!-- ******************  Home  ****************** -->
+    <header>
+    <div class="content-wrap">
+      <img src="code-icon.jpg" alt="">
+      <h1>ALIYAH RODRIGUES</h1>
+      <h2>Web Developer</h2>
+
+      <button onclick="displayText()" id="view-more">View More</button>
+
+      <div id="para" style="display: none;">I am currently pursuing a degree in computer systems engineering(hons). I wish to become a web developer. I have a keen interest in learning to code and creating websites. My goal is to develop this website as I develop my programming skills over the future. This site will host all of my ideas and projects.</div>
+    </div>
+    </header>
+
+
+      <!-- ******************  About  ****************** -->
+      <div class="container">
+        <div class="flex">
+          <div class="card">
+            <h2>Education:</h2>
+            <h3>Gems Our Own English High School, Dubai</h3>
+            <p>High School Dipolma, 2022</p>
+            <p>12th Grade CBSE Board Exam Science Stream</p>
+            <h3>Middlesex University Dubai</h3>
+            <p>BEng Computer Systems Engineering(Hons), 2022-2025</p>
+          </div>
+      
+          <div class="card">
+            <h2>Skills Required:</h2>
+              <ul>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Communication</li>
+                <li>Creativity</li>
+                <li>Problem Solving</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- *****************  Footer  ***************** -->
+      <footer>
+        <div class="content-wrap">
+          <p style="font-size: 30px;">Let's Keep in Touch!</p>
+
+          <ul class="contact-list">
+            <li><a href="#">Email</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">YouTube</a></li>
+            <li><a href="#" target="_blank">GitHub</a></li>
+          </ul>
+      </div>
+      </footer>
+
+      <!-- *****************  JavaScript  ***************** -->
+      <script>
+        function displayText() {
+          var text = document.getElementById("para");
+          text.style.display = "block";
+          var btn = document.getElementById("view-more");
+          btn.style.display = "none";
+        }
+      </script>
+
+    </main>
+  </body>
+</html>
